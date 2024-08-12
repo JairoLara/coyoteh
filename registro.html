@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="reg.css">
+    <title>El Coyotito | Registro</title>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-card">
+            <div class="profile-section">
+                <form action="registroylogin/registro.php" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="foto" id="foto" required>
+    <p>Coloca una foto de perfil (jpg o png)</p>
+            </div>
+            <div class="register-section">
+                <div class="logo">El Coyotito</div>
+                    <div class="input-group">
+                        <input type="text" required="required" name="first_name">
+                        <label>Nombre/s</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" required="required" name="last_name">
+                        <label>Apellido/s</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required="required" name="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" required="required" name="phone">
+                        <label>Numero de telefono</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" required="required" name="password">
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirm-password" required="required" name="confirm_password">
+                        <label>Confirmar contraseña</label>
+                    </div>
+                    <span id="password-warning" class="warning"></span>
+                    <a href="log.html" style="color: #ce93d8;">Ya tengo cuenta</a>
+                    <button type="submit" name="registro" value="Registrar">Continuar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
